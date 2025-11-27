@@ -237,8 +237,8 @@ Your results were:
 * **Strong performance** on classes 0, 2, and 4
 * **Weaker recall** on minority classes (1 & 3) due to imbalance
 
----
-
+![ECG Output](https://github.com/saharanharish/-IoT-Based-ECG-Arrhythmia-Detection-using-Deep-Learning/blob/main/Screenshot%202025-11-27%20122206.png![ECG Output]
+)
 
 > "I trained a 1D CNN on MIT-BIH ECG heartbeat data.
 > Each heartbeat consists of 187 samples.
