@@ -1,20 +1,3 @@
-Absolutely, Harish — here is a **perfect GitHub-ready README.md** for your project.
-You can copy-paste this directly into your GitHub repository.
-It is clean, professional, neatly organized, and follows standard GitHub documentation style.
-
-I’ll include:
-
-* Clear headings
-* Code blocks
-* Explanations
-* Folder structure
-* Future scope
-* Model summary
-* A GOOD project description (important for placements)
-
-Let's go! 🚀
-
----
 
 # 📘 **ECG Heartbeat Classification Using 1D CNN (MIT-BIH Dataset)**
 
@@ -270,7 +253,6 @@ Your results were:
 
 * Implement class balancing
 * Try deeper architectures (CNN-LSTM)
-* Deploy model using FastAPI / TensorFlow Lite
 * Integrate with IoT pipeline (AD8232 → ESP32 → MQTT)
 
 ---
@@ -279,9 +261,7 @@ Your results were:
 
 This project is open-source and free to use for research and education.
 
----
 
-If you want, I can also generate:
 
 ✔ `requirements.txt`
 ✔ A ready-to-upload **GitHub repo ZIP**
