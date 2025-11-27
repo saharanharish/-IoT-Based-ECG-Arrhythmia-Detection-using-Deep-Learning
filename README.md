@@ -1,11 +1,11 @@
 
-# 📘 **ECG Heartbeat Classification Using 1D CNN (MIT-BIH Dataset)**
+#  **ECG Heartbeat Classification Using 1D CNN (MIT-BIH Dataset)**
 
 *A Deep Learning Project for ECG Arrhythmia Detection*
 
 ---
 
-## 🧩 **Project Overview**
+##  **Project Overview**
 
 This project implements a **1D Convolutional Neural Network (1D-CNN)** for classifying ECG heartbeats into **five categories** using the MIT-BIH Arrhythmia dataset (187-sample beat format).
 
@@ -27,7 +27,7 @@ This project is designed to be **simple, clear, and easy to understand**, making
 
 ---
 
-## 📂 **Repository Structure**
+##  **Repository Structure**
 
 ```
 ├── data/
@@ -42,7 +42,7 @@ This project is designed to be **simple, clear, and easy to understand**, making
 
 ---
 
-# 🔹 **Dataset Description**
+#  **Dataset Description**
 
 Each row in `mitbih_test.csv` represents:
 
@@ -57,7 +57,7 @@ Dataset shape example:
 
 ---
 
-# 🧱 **Pipeline Overview**
+#  **Pipeline Overview**
 
 The complete machine learning pipeline consists of:
 
@@ -78,9 +78,9 @@ All code is included below for clarity.
 
 ---
 
-# 🧪 **Code Implementation**
+#  **Code Implementation**
 
-### ✅ **0. Import Libraries**
+###  **0. Import Libraries**
 
 ```python
 import pandas as pd
@@ -97,7 +97,7 @@ from tensorflow.keras.utils import to_categorical
 
 ---
 
-### ✅ **1. Upload & Unzip Dataset**
+###  **1. Upload & Unzip Dataset**
 
 ```python
 from google.colab import files
@@ -108,7 +108,7 @@ uploaded = files.upload()
 
 ---
 
-### ✅ **2. Load Dataset**
+###  **2. Load Dataset**
 
 ```python
 df = pd.read_csv("mitbih_test.csv", header=None)
@@ -118,7 +118,7 @@ df.head()
 
 ---
 
-### ✅ **3. Split Into Features and Labels**
+### **3. Split Into Features and Labels**
 
 ```python
 X = df.iloc[:, :-1].values
@@ -127,7 +127,7 @@ y = df.iloc[:, -1].values
 
 ---
 
-### ✅ **4. Train/Test Split**
+###  **4. Train/Test Split**
 
 ```python
 X_train, X_test, y_train, y_test = train_test_split(
@@ -140,7 +140,7 @@ X_train, X_test, y_train, y_test = train_test_split(
 
 ---
 
-### ✅ **5. Preprocessing**
+###  **5. Preprocessing**
 
 #### **5.1 Standardization**
 
@@ -167,7 +167,7 @@ y_test_cat  = to_categorical(y_test, num_classes)
 
 ---
 
-### ✅ **6. Build 1D CNN Model**
+###  **6. Build 1D CNN Model**
 
 ```python
 model = Sequential([
@@ -190,7 +190,7 @@ model.summary()
 
 ---
 
-### ✅ **7. Compile & Train**
+###  **7. Compile & Train**
 
 ```python
 model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
@@ -206,7 +206,7 @@ history = model.fit(
 
 ---
 
-### ✅ **8. Evaluate Model**
+###  **8. Evaluate Model**
 
 ```python
 test_loss, test_acc = model.evaluate(X_test_cnn, y_test_cat, verbose=0)
@@ -216,7 +216,7 @@ print("Test Loss:", test_loss)
 
 ---
 
-### ✅ **9. Confusion Matrix & Classification Report**
+###  **9. Confusion Matrix & Classification Report**
 
 ```python
 y_pred_prob = model.predict(X_test_cnn)
@@ -228,7 +228,7 @@ print(classification_report(y_test, y_pred))
 
 ---
 
-# 📊 **Model Performance**
+#  **Model Performance**
 
 Your results were:
 
@@ -248,15 +248,14 @@ Your results were:
 
 ---
 
-# 🚀 **Future Work**
-
+#  **Future Work**
 * Implement class balancing
 * Try deeper architectures (CNN-LSTM)
 * Integrate with IoT pipeline (AD8232 → ESP32 → MQTT)
 
 ---
 
-# 📜 **License**
+#  **License**
 
 This project is open-source and free to use for research and education.
 
