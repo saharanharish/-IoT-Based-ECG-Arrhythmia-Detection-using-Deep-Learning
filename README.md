@@ -239,7 +239,6 @@ Your results were:
 
 ---
 
-# 🧠 **Interview Summary (paste this into GitHub too)**
 
 > "I trained a 1D CNN on MIT-BIH ECG heartbeat data.
 > Each heartbeat consists of 187 samples.
@@ -262,10 +261,3 @@ Your results were:
 This project is open-source and free to use for research and education.
 
 
-
-✔ `requirements.txt`
-✔ A ready-to-upload **GitHub repo ZIP**
-✔ A **project banner** (image)
-✔ A **short LinkedIn post** for this project
-
-Just tell me!
